@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.*?>
+<?import javafx.scene.shape.*?>
+<?import javafx.scene.image.*?>
+<?import javafx.scene.text.*?>
+<?import java.lang.*?>
+<?import java.util.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+
+<AnchorPane id="AnchorPane" prefHeight="400.0" prefWidth="600.0" xmlns:fx="http://javafx.com/fxml/1" xmlns="http://javafx.com/javafx/8" fx:controller="sample.VisualizacaoController">
+   <children>
+      <AnchorPane prefHeight="410.0" prefWidth="173.0" style="-fx-background-color: #1C1C1C;">
+         <children>
+            <ImageView fitHeight="116.0" fitWidth="120.0" layoutX="34.0" layoutY="14.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../Imagens/simbolo.png" />
+               </image>
+            </ImageView>
+            <Button id="button_" layoutX="15.0" layoutY="140.0" mnemonicParsing="false" prefHeight="51.0" prefWidth="143.0" style="-fx-background-color: lightgray; -fx-background-radius: 101010; -fx-border-color: #000000; -fx-border-radius: 101010;" text="Adicionar Pokémon">
+               <font>
+                  <Font size="14.0" />
+               </font>
+            </Button>
+            <Button id="button_" layoutX="15.0" layoutY="205.0" mnemonicParsing="false" prefHeight="51.0" prefWidth="143.0" style="-fx-background-color: lightgray; -fx-background-radius: 101010; -fx-border-color: #000000; -fx-border-radius: 101010;" text="Meus Pokémons">
+               <font>
+                  <Font size="14.0" />
+               </font>
+            </Button>
+            <Button id="button_" layoutX="15.0" layoutY="337.0" mnemonicParsing="false" prefHeight="51.0" prefWidth="143.0" style="-fx-background-color: lightgray; -fx-background-radius: 101010; -fx-border-color: #000000; -fx-border-radius: 101010;" text="Sair">
+               <font>
+                  <Font size="14.0" />
+               </font>
+            </Button>
+         </children>
+      </AnchorPane>
+      <AnchorPane layoutX="451.0" prefHeight="410.0" prefWidth="181.0" style="-fx-background-color: #1C1C1C;" />
+      <ScrollPane layoutX="174.0" layoutY="3.0" prefHeight="403.0" prefWidth="275.0">
+         <content>
+            <TilePane hgap="2.0" prefHeight="858.0" prefWidth="255.0" vgap="3.0">
+               <children>
+                  <Rectangle arcHeight="5.0" arcWidth="5.0" fill="#dddddd" height="78.0" stroke="BLACK" strokeType="INSIDE" width="82.0" />
+                  <Rectangle arcHeight="5.0" arcWidth="5.0" fill="#dddddd" height="78.0" stroke="BLACK" strokeType="INSIDE" width="82.0" />
+                  <Rectangle arcHeight="5.0" arcWidth="5.0" fill="#dddddd" height="78.0" stroke="BLACK" strokeType="INSIDE" width="82.0" />
+                  <Rectangle arcHeight="5.0" arcWidth="5.0" fill="#dddddd" height="78.0" stroke="BLACK" strokeType="INSIDE" width="82.0" />
+                  <Rectangle arcHeight="5.0" arcWidth="5.0" fill="#dddddd" height="78.0" stroke="BLACK" strokeType="INSIDE" width="82.0" />
+                  <Rectangle arcHeight="5.0" arcWidth="5.0" fill="#dddddd" height="78.0" stroke="BLACK" strokeType="INSIDE" width="82.0" />
+                  <Rectangle arcHeight="5.0" arcWidth="5.0" fill="#dddddd" height="78.0" stroke="BLACK" strokeType="INSIDE" width="82.0" />
+                  <Rectangle arcHeight="5.0" arcWidth="5.0" fill="#dddddd" height="78.0" stroke="BLACK" strokeType="INSIDE" width="82.0" />
+                  <Rectangle arcHeight="5.0" arcWidth="5.0" fill="#dddddd" height="78.0" stroke="BLACK" strokeType="INSIDE" width="82.0" />
+                  <Rectangle arcHeight="5.0" arcWidth="5.0" fill="#dddddd" height="78.0" stroke="BLACK" strokeType="INSIDE" width="82.0" />
+                  <Rectangle arcHeight="5.0" arcWidth="5.0" fill="#dddddd" height="78.0" stroke="BLACK" strokeType="INSIDE" width="82.0" />
+                  <Rectangle arcHeight="5.0" arcWidth="5.0" fill="#dddddd" height="78.0" stroke="BLACK" strokeType="INSIDE" width="82.0" />
+                  <Rectangle arcHeight="5.0" arcWidth="5.0" fill="#dddddd" height="78.0" stroke="BLACK" strokeType="INSIDE" width="82.0" />
+                  <Rectangle arcHeight="5.0" arcWidth="5.0" fill="#dddddd" height="78.0" stroke="BLACK" strokeType="INSIDE" width="82.0" />
+                  <Rectangle arcHeight="5.0" arcWidth="5.0" fill="#dddddd" height="78.0" stroke="BLACK" strokeType="INSIDE" width="82.0" />
+                  <Rectangle arcHeight="5.0" arcWidth="5.0" fill="#dddddd" height="78.0" stroke="BLACK" strokeType="INSIDE" width="82.0" />
+                  <Rectangle arcHeight="5.0" arcWidth="5.0" fill="#dddddd" height="78.0" stroke="BLACK" strokeType="INSIDE" width="82.0" />
+                  <Rectangle arcHeight="5.0" arcWidth="5.0" fill="#dddddd" height="78.0" stroke="BLACK" strokeType="INSIDE" width="82.0" />
+                  <Rectangle arcHeight="5.0" arcWidth="5.0" fill="#dddddd" height="78.0" stroke="BLACK" strokeType="INSIDE" width="82.0" />
+                  <Rectangle arcHeight="5.0" arcWidth="5.0" fill="#dddddd" height="78.0" stroke="BLACK" strokeType="INSIDE" width="82.0" />
+                  <Rectangle arcHeight="5.0" arcWidth="5.0" fill="#dddddd" height="78.0" stroke="BLACK" strokeType="INSIDE" width="82.0" />
+                  <Rectangle arcHeight="5.0" arcWidth="5.0" fill="#dddddd" height="78.0" stroke="BLACK" strokeType="INSIDE" width="82.0" />
+                  <Rectangle arcHeight="5.0" arcWidth="5.0" fill="#dddddd" height="78.0" stroke="BLACK" strokeType="INSIDE" width="82.0" />
+                  <Rectangle arcHeight="5.0" arcWidth="5.0" fill="#dddddd" height="78.0" stroke="BLACK" strokeType="INSIDE" width="82.0" />
+                  <Rectangle arcHeight="5.0" arcWidth="5.0" fill="#dddddd" height="78.0" stroke="BLACK" strokeType="INSIDE" width="82.0" />
+                  <Rectangle arcHeight="5.0" arcWidth="5.0" fill="#dddddd" height="78.0" stroke="BLACK" strokeType="INSIDE" width="82.0" />
+                  <Rectangle arcHeight="5.0" arcWidth="5.0" fill="#dddddd" height="78.0" stroke="BLACK" strokeType="INSIDE" width="82.0" />
+                  <Rectangle arcHeight="5.0" arcWidth="5.0" fill="#dddddd" height="78.0" stroke="BLACK" strokeType="INSIDE" width="82.0" />
+                  <Rectangle arcHeight="5.0" arcWidth="5.0" fill="#dddddd" height="78.0" stroke="BLACK" strokeType="INSIDE" width="82.0" />
+                  <Rectangle arcHeight="5.0" arcWidth="5.0" fill="#dddddd" height="78.0" stroke="BLACK" strokeType="INSIDE" width="82.0" />
+               </children>
+               <padding>
+                  <Insets left="5.0" />
+               </padding>
+            </TilePane>
+         </content>
+      </ScrollPane>
+   </children>
+</AnchorPane>
