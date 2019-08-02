@@ -21,7 +21,6 @@ public class VisualizacaoController implements Initializable {
      */
     @Override
     public void initialize(URL url, ResourceBundle rb) {
-        // TODO
     }    
     
 }

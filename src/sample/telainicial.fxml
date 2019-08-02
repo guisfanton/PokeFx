@@ -32,7 +32,7 @@
             <Font name="Javanese Text" size="18.0" />
          </font>
       </Button>
-      <Button id="button_entrar" layoutX="229.0" layoutY="217.0" mnemonicParsing="false" prefHeight="57.0" prefWidth="143.0" style="-fx-background-color: lightgray; -fx-background-radius: 101010; -fx-border-radius: 101010; -fx-border-color: #000000;" text="Entrar">
+      <Button fx:id="button_entrar" layoutX="229.0" layoutY="217.0" mnemonicParsing="false" onAction="#button_entrar" prefHeight="57.0" prefWidth="143.0" style="-fx-background-color: lightgray; -fx-background-radius: 101010; -fx-border-radius: 101010; -fx-border-color: #000000;" text="Entrar">
          <font>
             <Font name="Javanese Text" size="18.0" />
          </font>
