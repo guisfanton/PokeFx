@@ -31,8 +31,7 @@ public class telainicialController implements Initializable{
 
     @FXML
     public void button_entrar(ActionEvent event){
-        FXMLLoader Loader = new FXMLLoader();
-        Loader.setLocation(getClass().getResource("Visualizacao.fxml"));
+        FXMLLoader Loader = new FXMLLoader(getClass().getResource("Visualizacao.fxml"));
         try {
             Loader.load();
         } catch (IOException ex) {
