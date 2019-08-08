@@ -1,0 +1,88 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.image.*?>
+<?import javafx.scene.text.*?>
+<?import java.lang.*?>
+<?import java.util.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<AnchorPane id="AnchorPane" prefHeight="395.0" prefWidth="596.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="sample.AdicionarController">
+   <children>
+      <Label layoutX="291.0" layoutY="123.0" prefHeight="51.0" prefWidth="27.0" text="CP">
+         <font>
+            <Font size="16.0" />
+         </font>
+      </Label>
+      <Label layoutX="234.0" layoutY="53.0" prefHeight="51.0" prefWidth="143.0" text="Nome do Pokémon">
+         <font>
+            <Font size="16.0" />
+         </font>
+      </Label>
+      <TextField id="caixa_texto_usuario" fx:id="textfield_nome" layoutX="231.0" layoutY="99.0" prefHeight="32.0" prefWidth="149.0" />
+      <AnchorPane layoutX="427.0" prefHeight="410.0" prefWidth="181.0" style="-fx-background-color: #1C1C1C;">
+         <children>
+            <ImageView fitHeight="116.0" fitWidth="120.0" layoutX="34.0" layoutY="14.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../Imagens/simbolo.png" />
+               </image>
+            </ImageView>
+            <Button id="button_" fx:id="button_concluir" layoutX="26.0" layoutY="154.0" mnemonicParsing="false" prefHeight="51.0" prefWidth="143.0" style="-fx-background-color: lightgray; -fx-background-radius: 101010; -fx-border-color: #000000; -fx-border-radius: 101010;" text="Concluir">
+               <font>
+                  <Font size="14.0" />
+               </font>
+            </Button>
+         </children>
+      </AnchorPane>
+      <AnchorPane prefHeight="410.0" prefWidth="193.0" style="-fx-background-color: #1C1C1C;">
+         <children>
+            <ImageView fitHeight="116.0" fitWidth="120.0" layoutX="34.0" layoutY="14.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../Imagens/simbolo.png" />
+               </image>
+            </ImageView>
+            <Button id="button_" fx:id="butaoAdd" layoutX="21.0" layoutY="143.0" mnemonicParsing="false" onAction="#adicionarPokemon" prefHeight="51.0" prefWidth="143.0" style="-fx-background-color: lightgray; -fx-background-radius: 101010; -fx-border-color: #000000; -fx-border-radius: 101010;" text="Adicionar Pokémon">
+               <font>
+                  <Font size="14.0" />
+               </font>
+            </Button>
+            <Button id="button_" fx:id="button_meus" layoutX="21.0" layoutY="205.0" mnemonicParsing="false" prefHeight="51.0" prefWidth="143.0" style="-fx-background-color: lightgray; -fx-background-radius: 101010; -fx-border-color: #000000; -fx-border-radius: 101010;" text="Meus Pokémons">
+               <font>
+                  <Font size="14.0" />
+               </font>
+            </Button>
+            <Button id="button_" fx:id="button_sair" layoutX="25.0" layoutY="338.0" mnemonicParsing="false" prefHeight="51.0" prefWidth="143.0" style="-fx-background-color: lightgray; -fx-background-radius: 101010; -fx-border-color: #000000; -fx-border-radius: 101010;" text="Sair">
+               <font>
+                  <Font size="14.0" />
+               </font>
+            </Button>
+         </children>
+      </AnchorPane>
+      <Label layoutX="291.0" layoutY="191.0" prefHeight="51.0" prefWidth="27.0" text="PS">
+         <font>
+            <Font size="16.0" />
+         </font>
+      </Label>
+      <Label layoutX="250.0" layoutY="258.0" prefHeight="51.0" prefWidth="116.0" text="Ataque Rápido">
+         <font>
+            <Font size="16.0" />
+         </font>
+      </Label>
+      <Label layoutX="237.0" layoutY="324.0" prefHeight="51.0" prefWidth="134.0" text="Ataque Carregado">
+         <font>
+            <Font size="16.0" />
+         </font>
+      </Label>
+      <ComboBox fx:id="combobox_especie" layoutX="231.0" layoutY="28.0" prefWidth="150.0" />
+      <Label layoutX="276.0" layoutY="-11.0" prefHeight="51.0" prefWidth="60.0" text="Espécie">
+         <font>
+            <Font size="16.0" />
+         </font>
+      </Label>
+      <TextField id="caixa_texto_usuario" fx:id="textfield_cp" layoutX="233.0" layoutY="158.0" prefHeight="32.0" prefWidth="149.0" />
+      <TextField id="caixa_texto_usuario" fx:id="textfield_ps" layoutX="230.0" layoutY="226.0" prefHeight="32.0" prefWidth="149.0" />
+      <TextField id="caixa_texto_usuario" fx:id="textfield_rapido" layoutX="230.0" layoutY="301.0" prefHeight="32.0" prefWidth="149.0" />
+      <TextField id="caixa_texto_usuario" fx:id="textfield_carregado" layoutX="230.0" layoutY="368.0" prefHeight="32.0" prefWidth="149.0" />
+   </children>
+</AnchorPane>
