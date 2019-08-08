@@ -9,6 +9,7 @@ import javafx.scene.control.Button;
 import javafx.stage.Stage;
 
 import java.io.IOException;
+import java.util.List;
 
 public class VisualizacaoController {
 
@@ -17,6 +18,11 @@ public class VisualizacaoController {
 
     @FXML
     private Button button_sair;
+
+    @FXML
+    void mostrar(ActionEvent event) {
+        List<Pokemon> listpokemon = Main.pokeFxStorage.getAllPokemons();
+    }
 
     @FXML
     void adicionar(ActionEvent event) {

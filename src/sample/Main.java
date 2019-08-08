@@ -8,8 +8,12 @@ import javafx.stage.Stage;
 
 public class Main extends Application {
 
+    public static PokeFxStorage pokeFxStorage;
+
         @Override
         public void start(Stage stage) throws Exception {
+            pokeFxStorage = new PokeFxStorage("localhost", 3306, "pokefx", "root", "root");
+
             Parent root = FXMLLoader.load(getClass().getResource("telainicial.fxml"));
 
             Scene scene = new Scene(root);
