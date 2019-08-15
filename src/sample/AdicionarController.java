@@ -15,6 +15,7 @@ import javafx.fxml.FXMLLoader;
 import javafx.fxml.Initializable;
 import javafx.scene.Parent;
 import javafx.scene.Scene;
+import javafx.scene.control.Button;
 import javafx.stage.Stage;
 
 /**
@@ -27,9 +28,32 @@ public class AdicionarController implements Initializable {
     /**
      * Initializes the controller class.
      */
+    @FXML
+    private Button button_meuspokemons;
+
     @Override
     public void initialize(URL url, ResourceBundle rb) {
     }
+
+    @FXML
+    void button_meuspokemos(ActionEvent event) {
+        FXMLLoader Loader = new FXMLLoader(getClass().getResource("Visualizacao.fxml"));
+        try {
+            Loader.load();
+        } catch (IOException ex) {
+            ex.printStackTrace();
+        }
+        Parent p = Loader.getRoot();
+        Stage stage = new Stage();
+        stage.setScene(new Scene(p));
+        stage.show();
+        stage = (Stage) button_meuspokemons.getScene().getWindow();
+        stage.close();
+    }
+
+
+
+
 
     
 }
