@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.ListView?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane id="AnchorPane" prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="Javafx.VisualizacaoController">
+   <children>
+      <AnchorPane prefHeight="410.0" prefWidth="173.0" style="-fx-background-color: #1C1C1C;">
+         <children>
+            <ImageView fitHeight="116.0" fitWidth="120.0" layoutX="34.0" layoutY="14.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../Imagens/simbolo.png" />
+               </image>
+            </ImageView>
+            <Button fx:id="adicionarButton" layoutX="15.0" layoutY="140.0" mnemonicParsing="false" onAction="#adicionarButton" prefHeight="51.0" prefWidth="143.0" style="-fx-background-color: lightgray; -fx-background-radius: 101010; -fx-border-color: #000000; -fx-border-radius: 101010;" text="Adicionar Pokémon">
+               <font>
+                  <Font size="14.0" />
+               </font>
+            </Button>
+            <Button fx:id="sairButton" layoutX="15.0" layoutY="337.0" mnemonicParsing="false" onAction="#sairButton" prefHeight="51.0" prefWidth="143.0" style="-fx-background-color: lightgray; -fx-background-radius: 101010; -fx-border-color: #000000; -fx-border-radius: 101010;" text="Sair">
+               <font>
+                  <Font size="14.0" />
+               </font>
+            </Button>
+         </children>
+      </AnchorPane>
+      <AnchorPane layoutX="451.0" prefHeight="410.0" prefWidth="181.0" style="-fx-background-color: #1C1C1C;">
+         <children>
+            <ImageView fx:id="pokemonImageView" fitHeight="90.0" fitWidth="87.0" layoutX="47.0" layoutY="33.0" pickOnBounds="true" preserveRatio="true" />
+            <Label fx:id="nomeLabel" layoutX="20.0" layoutY="167.0" prefHeight="17.0" prefWidth="143.0" textAlignment="CENTER" textFill="WHITE" />
+            <Label fx:id="especieLabel" layoutX="20.0" layoutY="197.0" prefHeight="17.0" prefWidth="143.0" textAlignment="CENTER" textFill="WHITE" />
+            <Label fx:id="psLabel" layoutX="20.0" layoutY="222.0" prefHeight="17.0" prefWidth="143.0" textAlignment="CENTER" textFill="WHITE" />
+            <Label fx:id="cpLabel" layoutX="20.0" layoutY="259.0" prefHeight="17.0" prefWidth="143.0" textAlignment="CENTER" textFill="WHITE" />
+            <Label fx:id="ataqueRapidoLabel" layoutX="20.0" layoutY="293.0" prefHeight="17.0" prefWidth="143.0" textAlignment="CENTER" textFill="WHITE" />
+            <Label fx:id="ataqueCarregadoLabel" layoutX="20.0" layoutY="329.0" prefHeight="17.0" prefWidth="143.0" textAlignment="CENTER" textFill="WHITE" />
+            <Button fx:id="alterarButton" layoutX="10.0" layoutY="364.0" mnemonicParsing="false" onAction="#alterarButton" prefHeight="31.0" prefWidth="75.0" style="-fx-background-color: lightgray; -fx-background-radius: 101010; -fx-border-color: #000000; -fx-border-radius: 101010;" text="Alterar">
+               <font>
+                  <Font size="14.0" />
+               </font>
+            </Button>
+            <Button fx:id="excluirButton" layoutX="97.0" layoutY="364.0" mnemonicParsing="false" onAction="#excluirButton" prefHeight="31.0" prefWidth="75.0" style="-fx-background-color: lightgray; -fx-background-radius: 101010; -fx-border-color: #000000; -fx-border-radius: 101010;" text="Excluir">
+               <font>
+                  <Font size="14.0" />
+               </font>
+            </Button>
+         </children></AnchorPane>
+      <ListView fx:id="pokemonListView" layoutX="175.0" prefHeight="410.0" prefWidth="274.0" />
+   </children>
+</AnchorPane>

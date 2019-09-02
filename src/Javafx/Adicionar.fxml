@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.ComboBox?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane id="AnchorPane" prefHeight="395.0" prefWidth="596.0" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="Javafx.AdicionarController">
+   <children>
+      <Label layoutX="292.0" layoutY="96.0" prefHeight="51.0" prefWidth="27.0" text="CP">
+         <font>
+            <Font size="16.0" />
+         </font>
+      </Label>
+      <Label layoutX="236.0" layoutY="21.0" prefHeight="51.0" prefWidth="143.0" text="Nome do Pokémon">
+         <font>
+            <Font size="16.0" />
+         </font>
+      </Label>
+      <TextField id="caixa_texto_usuario" fx:id="nomeTextField" layoutX="231.0" layoutY="64.0" prefHeight="32.0" prefWidth="149.0" />
+      <AnchorPane layoutX="427.0" prefHeight="410.0" prefWidth="181.0" style="-fx-background-color: #1C1C1C;">
+         <children>
+            <ImageView fitHeight="116.0" fitWidth="120.0" layoutX="34.0" layoutY="14.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../Imagens/simbolo.png" />
+               </image>
+            </ImageView>
+            <ImageView fx:id="pokemonImageView" fitHeight="97.0" fitWidth="106.0" layoutX="39.0" layoutY="160.0" pickOnBounds="true" preserveRatio="true" />
+            <ComboBox fx:id="especieComboBox" layoutX="17.0" layoutY="337.0" onAction="#especieComboBox" prefWidth="150.0" />
+            <Label layoutX="64.0" layoutY="302.0" text="Espécie" textFill="WHITE">
+               <font>
+                  <Font size="16.0" />
+               </font>
+            </Label>
+         </children>
+      </AnchorPane>
+      <AnchorPane prefHeight="410.0" prefWidth="193.0" style="-fx-background-color: #1C1C1C;">
+         <children>
+            <ImageView fitHeight="116.0" fitWidth="120.0" layoutX="34.0" layoutY="14.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../Imagens/simbolo.png" />
+               </image>
+            </ImageView>
+            <Button id="button_" fx:id="adicionarPokemonButton" layoutX="21.0" layoutY="143.0" mnemonicParsing="false" onAction="#adicionarPokemonButton" prefHeight="51.0" prefWidth="143.0" style="-fx-background-color: lightgray; -fx-background-radius: 101010; -fx-border-color: #000000; -fx-border-radius: 101010;" text="Adicionar Pokémon">
+               <font>
+                  <Font size="14.0" />
+               </font>
+            </Button>
+            <Button id="button_" fx:id="meusPokemonsButton" layoutX="21.0" layoutY="336.0" mnemonicParsing="false" onAction="#meusPokemonsButton" prefHeight="51.0" prefWidth="143.0" style="-fx-background-color: lightgray; -fx-background-radius: 101010; -fx-border-color: #000000; -fx-border-radius: 101010;" text="Meus Pokémons">
+               <font>
+                  <Font size="14.0" />
+               </font>
+            </Button>
+         </children>
+      </AnchorPane>
+      <Label layoutX="292.0" layoutY="170.0" prefHeight="51.0" prefWidth="27.0" text="PS">
+         <font>
+            <Font size="16.0" />
+         </font>
+      </Label>
+      <Label layoutX="247.0" layoutY="242.0" prefHeight="51.0" prefWidth="116.0" text="Ataque Rápido">
+         <font>
+            <Font size="16.0" />
+         </font>
+      </Label>
+      <Label layoutX="238.0" layoutY="323.0" prefHeight="51.0" prefWidth="134.0" text="Ataque Carregado">
+         <font>
+            <Font size="16.0" />
+         </font>
+      </Label>
+      <TextField fx:id="cpTextField" layoutX="230.0" layoutY="147.0" />
+      <TextField fx:id="psTextField" layoutX="230.0" layoutY="221.0" />
+      <TextField fx:id="ataqueRapidoTextField" layoutX="230.0" layoutY="298.0" />
+      <TextField fx:id="ataqueCarregadoTextField" layoutX="230.0" layoutY="362.0" />
+   </children>
+</AnchorPane>
